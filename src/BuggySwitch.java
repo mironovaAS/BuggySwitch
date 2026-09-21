@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class BuggySwitch {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Введите день недели (1-7): ");
+        int day = scanner.nextInt();
+
+        switch (day) {
+            case 1:
+                System.out.println("Понедельник");
+                break;
+            case 2:
+                System.out.println("Вторник");
+            case 3:
+                System.out.println("Среда");
+            case 4:
+                System.out.println("Четверг");
+            case 5:
+                System.out.println("Пятница");
+                break;
+            case 6:
+                System.out.println("Суббота");
+                break;
+            case 7:
+                System.out.println("Воскресенье");
+                break;
+            default:
+                System.out.println("Некорректный день");
+        }
+    }
+}
